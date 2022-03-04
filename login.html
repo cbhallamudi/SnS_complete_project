@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SHEARMAN AND STERLING</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge">
+	<link rel="shortcut icon" href="./src/images/sNs_logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="./src/fonts/stylesheet.css">
+	<link rel="stylesheet" href="./src/fa/css/all.css">
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+	<main class="login-page-container">
+		<div class="left-login-page">
+			<div class="login-rectangle-1"></div>
+		</div>
+		<div class="right-login-page">
+			<div class="login-right-logo">
+				<img src="./src/images/sNs_black_logo.png" alt="">
+			</div>
+
+			<h2 class="login-form-h2">
+				Welcome  back! Please login 
+				to your account.
+			</h2>
+
+			<form action="javascript:void(0);" class="login-form" name="contactForm" onsubmit="return validateForm()">
+				<div class="login-form-group">
+					<label class="login-form-label" for="useremail">email address<span class="label-required">*</span></label>	
+					<input type="text" id="useremail" name="useremail" placeholder="example: emailaddress@domain.com" class="login-form-input">
+					<div class="error" id="useremailErr"></div>
+				</div>
+				<div class="login-form-group">
+					<label class="login-form-label" for="userpwd">password<span class="label-required">*</span></label>
+					<input type="password" id="userpwd" name="userpwd" placeholder="*******************" class="login-form-input">
+					<div class="error" id="userpwdErr"></div>
+				</div>
+				<div class="login-form-group login-form-checkbox-div">
+					<label class="checkbox-container">
+					  <input type="checkbox" id="rememberMe">
+					  <span class="checkbox-indicator">remember me</span>
+					</label>
+					<a href="#" class="forgot-password">forgot password?</a>
+				</div>	
+				<div class="login-form-footer">
+					<input type="submit" class="login-form-btn login-btn" value="login">
+					<a href="javascript:void(0)" class="login-form-btn signup-btn">sign up</a>
+				</div>
+			</form>
+		</div>
+	</main>
+	<script>
+		function printError(elemId, hintMsg) {
+		    document.getElementById(elemId).innerHTML = hintMsg;
+		}
+
+		// Defining a function to validate form 
+		function validateForm() {
+		    var useremail = document.getElementById("useremail").value;
+		    var userpwd = document.getElementById("userpwd").value;
+
+		    var checkboxes = document.getElementsByName("hobbies[]");
+		    for(var i=0; i < checkboxes.length; i++) {
+		        if(checkboxes[i].checked) {
+		            // Populate hobbies array with selected values
+		            hobbies.push(checkboxes[i].value);
+		        }
+		    }
+		    
+			// Defining error variables with a default value
+		    var useruseremailErr = userpwdErr = true;
+		    
+		    // Validate email address
+		    if(useremail == "") {
+		        printError("useremailErr", "Please enter your email address");
+		    } else {
+		        // Regular expression for basic email validation
+		        var regex = /^\S+@\S+\.\S+$/;
+		        if(regex.test(useremail) === false) {
+		            printError("useremailErr", "Please enter a valid email address");
+		        } else{
+		            printError("useremailErr", "");
+		            useremailErr = false;
+		        }
+		    }
+		    
+		    // Validate password
+		    if(userpwd == "") {
+		        printError("userpwdErr", "Please enter your password");
+		    } else {
+	            printError("userpwdErr", "");
+	            userpwdErr = false;
+		    }
+		    
+		    if((useremailErr || userpwdErr) == true) {
+		       return false;
+		    }
+		};
+	</script>
+</body>
+</html>

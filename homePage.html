@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
+	<title>SHEARMAN & STERLING</title>
+	<link rel="shortcut icon" href="./src/images/sNs_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./src/fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="./src/fa/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./css/phase2.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	
+</head>
+<body>
+	<a href="#header" class="top-btn flex-row-center-center">
+		<i class="fas fa-arrow-up fa-2x"></i>
+	</a>
+	<a href="javascript:void(0);" class="top-menu-btn flex-row-center-center" onclick="openRightMenu()">
+		<i class="fas fa-bars fa-2x"></i>
+	</a>
+
+	<div id="myRightSidePanel" class="rightSidepanel">
+		<!-- <div class="right-sidepanel-close-div">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeLeftNav()">
+				<i class="fas fa-caret-right fa-3x"></i>
+			</a>
+		</div> -->
+		<div class="right-menu-content">
+			
+			<div class="right-side-panel-tab">
+			  <button class="rightPaneltablinks" onclick="openRightTabContent(event, 'energy')" id="defaultRightSidepanelOpen">
+			  	<img src="./src/images/energy.svg" alt="" class="filter-svg">
+			  	<span class="right-pane-icon-name">energy</span>
+			  </button>
+			  <button class="rightPaneltablinks" onclick="openRightTabContent(event, 'financial')">
+			  	<img src="./src/images/financial.svg" alt="" class="filter-svg">
+			  	<span class="right-pane-icon-name">financial</span>
+			  </button>
+			  <button class="rightPaneltablinks" onclick="openRightTabContent(event, 'impactESG')">
+			  	<img src="./src/images/impact_ESG.svg" alt="" class="filter-svg">
+			  	<span class="right-pane-icon-name">impact/ESG</span>
+			  </button>
+			  <button class="rightPaneltablinks" onclick="openRightTabContent(event, 'equity')"><img src="./src/images/private_equity.svg" alt="" class="filter-svg">
+			  	<span class="right-pane-icon-name">private equity</span>
+			  </button>
+			</div>
+
+			<div id="energy" class="rightPaneltabcontent">
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/webinars.png" alt="">
+			  	<span>webinar</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+				<div class="right-panel-user-room">
+				    <p class="right-panel-user-icon">e</p>
+				    <span class="right-panel-user-name">Estate Planning Advisory</span>
+				</div>
+				<div class="right-panel-user-room">
+				    <p class="right-panel-user-icon">e</p>
+				    <span class="right-panel-user-name">Estate Planning Advisory</span>
+				</div>
+			  </div>
+
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/whitepapers.png" alt="">
+			  	<span>whitepapers</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">a</p>
+			        <span class="right-panel-user-name">Are Digital Assets The New Gold?</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">t</p>
+			        <span class="right-panel-user-name">The Institutionalization Of Digital Assets</span>
+			    </div>
+			  </div>
+
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/events.png" alt="">
+			  	<span>events</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">i</p>
+			        <span class="right-panel-user-name">Investment Opportunities In Emerging..</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">s</p>
+			        <span class="right-panel-user-name">Shearman And Sterling Inaugural ..</span>
+			    </div>
+			  </div> 
+			  
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/rightside_content.png" alt="">
+			  	<span>content</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">i</p>
+			        <span class="right-panel-user-name">Investment Opportunities In Emerging..</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">s</p>
+			        <span class="right-panel-user-name">Shearman And Sterling Inaugural ..</span>
+			    </div>
+			  </div> 
+			</div>
+
+			<div id="financial" class="rightPaneltabcontent">
+			  
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/webinars.png" alt="">
+			  	<span>webinar</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+				<div class="right-panel-user-room">
+				    <p class="right-panel-user-icon">e</p>
+				    <span class="right-panel-user-name">Estate Planning Advisory</span>
+				</div>
+				<div class="right-panel-user-room">
+				    <p class="right-panel-user-icon">e</p>
+				    <span class="right-panel-user-name">Estate Planning Advisory</span>
+				</div>
+			  </div>
+
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/whitepapers.png" alt="">
+			  	<span>whitepapers</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">a</p>
+			        <span class="right-panel-user-name">Are Digital Assets The New Gold?</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">t</p>
+			        <span class="right-panel-user-name">The Institutionalization Of Digital Assets</span>
+			    </div>
+			  </div>
+
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/events.png" alt="">
+			  	<span>events</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">i</p>
+			        <span class="right-panel-user-name">Investment Opportunities In Emerging..</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">s</p>
+			        <span class="right-panel-user-name">Shearman And Sterling Inaugural ..</span>
+			    </div>
+			  </div> 
+			  
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/rightside_content.png" alt="">
+			  	<span>content</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">i</p>
+			        <span class="right-panel-user-name">Investment Opportunities In Emerging..</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">s</p>
+			        <span class="right-panel-user-name">Shearman And Sterling Inaugural ..</span>
+			    </div>
+			  </div> 
+			</div>
+
+			<div id="impactESG" class="rightPaneltabcontent">
+			  
+			 <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/webinars.png" alt="">
+			  	<span>webinar</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+				<div class="right-panel-user-room">
+				    <p class="right-panel-user-icon">e</p>
+				    <span class="right-panel-user-name">Estate Planning Advisory</span>
+				</div>
+				<div class="right-panel-user-room">
+				    <p class="right-panel-user-icon">e</p>
+				    <span class="right-panel-user-name">Estate Planning Advisory</span>
+				</div>
+			  </div>
+
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/whitepapers.png" alt="">
+			  	<span>whitepapers</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">a</p>
+			        <span class="right-panel-user-name">Are Digital Assets The New Gold?</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">t</p>
+			        <span class="right-panel-user-name">The Institutionalization Of Digital Assets</span>
+			    </div>
+			  </div>
+
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/events.png" alt="">
+			  	<span>events</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">i</p>
+			        <span class="right-panel-user-name">Investment Opportunities In Emerging..</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">s</p>
+			        <span class="right-panel-user-name">Shearman And Sterling Inaugural ..</span>
+			    </div>
+			  </div> 
+			  
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/rightside_content.png" alt="">
+			  	<span>content</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">i</p>
+			        <span class="right-panel-user-name">Investment Opportunities In Emerging..</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">s</p>
+			        <span class="right-panel-user-name">Shearman And Sterling Inaugural ..</span>
+			    </div>
+			  </div>
+			</div>
+
+			<div id="equity" class="rightPaneltabcontent">
+			 <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/webinars.png" alt="">
+			  	<span>webinar</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+				<div class="right-panel-user-room" onclick="openLeftTabContent(event,'estatePlanningAdvisory')">
+				    <p class="right-panel-user-icon">e</p>
+				    <span class="right-panel-user-name">Estate Planning Advisory</span>
+				</div>
+				<div class="right-panel-user-room">
+				    <p class="right-panel-user-icon">e</p>
+				    <span class="right-panel-user-name">Estate Planning Advisory</span>
+				</div>
+			  </div>
+
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/whitepapers.png" alt="">
+			  	<span>whitepapers</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">a</p>
+			        <span class="right-panel-user-name">Are Digital Assets The New Gold?</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">t</p>
+			        <span class="right-panel-user-name">The Institutionalization Of Digital Assets</span>
+			    </div>
+			  </div>
+
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/events.png" alt="">
+			  	<span>events</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">i</p>
+			        <span class="right-panel-user-name">Investment Opportunities In Emerging..</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">s</p>
+			        <span class="right-panel-user-name">Shearman And Sterling Inaugural ..</span>
+			    </div>
+			  </div> 
+			  
+			  <button class="right-sidepanel-accordion">
+			  	<img src="./src/images/rightside_content.png" alt="">
+			  	<span>content</span>
+			  </button>
+			  <div class="right-sidepanel-accodion-panel">
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">i</p>
+			        <span class="right-panel-user-name">Investment Opportunities In Emerging..</span>
+			    </div>
+			    <div class="right-panel-user-room">
+			        <p class="right-panel-user-icon">s</p>
+			        <span class="right-panel-user-name">Shearman And Sterling Inaugural ..</span>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="container navbar-container">
+		<div class="navbar">
+			<div class="navbar-brand">
+				<a href="#header"><img src="./src/images/sNs_logo.png" alt=""></a>
+			</div>
+			<div class="navbar-navigation" id="navbar-navigation">
+				<div class="navgation-left-menu" id="navgation-left-menu">
+					<a href="#opportunityOwner" class="nav-link">opportunity finder</a>
+					<a href="#investor" class="nav-link">investor</a>
+					<a href="#testimonials" class="nav-link">testimonials</a>
+					<a href="#footer" class="nav-link">about us</a>
+				</div>
+				<div class="navgation-right-menu">
+					<a href="javascript:void(0);" class="nav-link">log in</a><a href="javascript:void(0);" class="nav-link">sign up</a>
+				</div>
+				
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="showResponsiveNav()">
+			    <i class="fa fa-2x fa-sitemap"></i>
+			</a>
+		</div>
+	</nav>
+
+	<header class="container header-container">
+		<div class="header" id="header">
+			<div class="left-header-div">
+				<p>
+					500+ successful deals.
+				</p>
+				<h1>
+					Everything you need to buy 
+					and sell startups.
+				</h1>
+				<p>
+					Join 100,000+ entrepreneurs buying and selling startups on the world’s #1 
+					acquisition marketplace.
+				</p>
+				<div class="header-btns-div">
+					<a class="header-btn join-now-btn">
+						<span>join now</span>
+						<i class="fas fa-arrow-right"></i>
+					</a>
+					<a class="header-btn watch-video-btn" onclick="viewLightBox()">
+						<i class="fas fa-play-circle"></i>
+						<span>watch video</span>
+					</a>
+				</div>
+			</div>
+			<div class="right-header-div">
+				<div class="right-header-subdivs right-header-subdiv-1">
+					<div>
+						<p>Deal price amount</p>
+						<p>Category: SAAS</p>
+						<p><i class="fas fa-chart-line"></i><span>6.5%</span></p>
+					</div>
+					
+					<div id="chart_div"></div>
+				</div>
+				<div class="right-header-subdivs right-header-subdiv-2">
+					<div class="right-header-subdiv-2-top">
+						<p>Deal price amount</p>
+						<p>Category: SAAS</p>
+					</div>
+					<div class="right-header-subdiv-2-bottom">
+						<h3 class="right-header-sd2-h3">
+							$87,632
+						</h3>
+						<div>
+							<h4 class="right-header-sd2-h4">
+								About startup
+							</h4>
+							<div>
+								<p class="right-header-sd2-subP"></p>
+								<p class="right-header-sd2-subP"></p>
+								<p class="right-header-sd2-subP"></p>
+								<p class="right-header-sd2-subP"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right-header-subdivs right-header-subdiv-3">
+					<h4 class="right-header-sd3-h4">
+						About startup
+					</h4>
+					<div>
+						<p class="right-header-sd3-subP"></p>
+						<p class="right-header-sd3-subP"></p>
+					</div>
+				</div>
+				<div class="right-header-subdivs right-header-subdiv-4">
+					<img src="./src/images/user_subdiv_4_img.png" alt="user">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="container clients-container">
+		<div class="clients reveal" id="clients">
+			<div class="client-img-container">
+				
+				<img src="./src/images/client_image_1.png" alt="client image" class="client-image">
+			</div>
+			<div class="client-img-container">
+			
+				<img src="./src/images/client_image_2.png" alt="clien image" class="client-image">
+			</div>	
+			<div class="client-img-container">
+				<img src="./src/images/client_image_3.png" alt="client image" class="client-image">
+			</div>	
+			<div class="client-img-container">
+				<img src="./src/images/client_image_4.png" alt="client image" class="client-image">
+			</div>	
+		</div>
+	</section>
+
+	<section class="container investor-container">
+		<div class="investor"  id="investor">
+			<div class="investor-left-div reveal">
+				<h5 class="investor-left-div-h5">Investor</h5>
+				<H4  class="investor-left-div-h4">Discover your dream startup</H4>
+				<p class="investor-left-div-p">
+					Search 1,000s of vetted startups to find your perfect match. Derisk potential acquisitions and project returns using key financial metrics. Be LOI-ready in as little as 30 days.
+				</p>
+				<div class="investor-left-div-points-div">
+					<p class="investor-left-div-points-p"><i class="fas fa-play-circle"></i><span>Evaluate 20+ financial metrics, including MRR, CAC, and ARR</span></p>
+					<p class="investor-left-div-points-p"><i class="fas fa-play-circle"></i><span>Easily create and send LOIs within the platform</span></p>
+					<p class="investor-left-div-points-p"><i class="fas fa-play-circle"></i><span>Filterable listings to help find your best fit</span></p>
+				</div>
+				<a class="header-btn join-now-btn">
+					<span>join now</span>
+					<i class="fas fa-arrow-right"></i>
+				</a>
+			</div>
+			<div class="investor-right-div reveal">
+				<img class="investor-right-div-img" src="./src/images/investor_right_div.png" alt="Investor">
+				<img class="investor_ellipse" src="./src/images/investor_right_div_ellipse.png" alt="Investor ellipse">
+				<!-- <div class="investor-right-div-image-stickers sticker-1">
+					<p>fund</p>
+				</div>
+				<div class="investor-right-div-image-stickers sticker-2">
+					<p>Success</p>
+				</div>
+				<div class="investor-right-div-image-stickers sticker-3">
+					<p>opportunities</p>
+				</div>
+				<div class="investor-right-div-image-stickers sticker-4">
+					<p> smaller companies</p>
+				</div>
+				<div class="investor-right-div-image-stickers sticker-5">
+					<i class="fas fa-search"></i><p>investment</p>
+				</div> -->
+			</div>
+		</div>
+	</section>
+
+	<section class="container opportunity-owner-container">
+		<div class="opportunity-owner" id="opportunityOwner">
+			<div class="opportunity-owner-left-div reveal">
+				<div class="opportunity-owner-left-div-subdivs opportunity-owner-left-div-subdiv-1">
+					<div class="right-header-subdiv-2-top">
+						<p>Deal price amount</p>
+						<p>Category: SAAS</p>
+					</div>
+					<div class="right-header-subdiv-2-bottom">
+						<h3 class="right-header-sd2-h3">
+							$87,632
+						</h3>
+						<h4 class="right-header-sd2-h4">
+							About startup
+						</h4>
+						<div>
+							<p class="right-header-sd2-subP"></p>
+							<p class="right-header-sd2-subP"></p>
+							<p class="right-header-sd2-subP"></p>
+							<p class="right-header-sd2-subP"></p>
+						</div>
+					</div>
+				</div>
+				<div class="opportunity-owner-left-div-subdivs opportunity-owner-left-div-subdiv-2">
+					
+				</div>
+				<div class="opportunity-owner-left-div-subdivs opportunity-owner-left-div-subdiv-3">
+					<h3 class="owner-left-div-subdiv-3-h3">
+						$87,632
+					</h3>
+					<p class="owner-left-div-subdiv-3-p">
+						About startup
+					</p>
+					<p class="owner-left-div-subdiv-3-point"></p>
+					<p class="owner-left-div-subdiv-3-point"></p>
+					<p class="owner-left-div-subdiv-3-point"></p>
+					<p class="owner-left-div-subdiv-3-point"></p>
+				</div>
+				<div class="opportunity-owner-left-div-subdivs opportunity-owner-left-div-subdiv-4">
+					<div class="owner-left-div-subdiv-4-div"></div>
+					<p class="owner-left-div-subdiv-4-p"></p>
+					<p class="owner-left-div-subdiv-4-p"></p>
+				</div>
+			</div>
+			<div class="opportunity-owner-right-div reveal">
+				<h5 class="investor-left-div-h5">Opportunity owner</h5>
+				<H4  class="investor-left-div-h4">Sell quickly, easily, and for the highest price</H4>
+				<p class="investor-left-div-p">
+					List your startup in front of 100,000+ potential buyers. Hire advisors to help manage and close your acquisition. Start conversations that lead to acquisition in as little as 30 days.
+				</p>
+				<div class="investor-left-div-points-div">
+					<p class="investor-left-div-points-p"><i class="fas fa-play-circle"></i><span>Evaluate 20+ financial metrics, including MRR, CAC, and ARR</span></p>
+					<p class="investor-left-div-points-p"><i class="fas fa-play-circle"></i><span>Easily create and send LOIs within the platform</span></p>
+					<p class="investor-left-div-points-p"><i class="fas fa-play-circle"></i><span>Filterable listings to help find your best fit</span></p>
+				</div>
+				<a class="header-btn join-now-btn">
+					<span>join now</span>
+					<i class="fas fa-arrow-right"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="container testimonials-container">
+		<div class="testimonials reveal" id="testimonials">
+			<div class="tab">
+			  <button class="testimonialLinks" onclick="openCity(event, 'terser')" id="defaultOpen">
+			  	<img src="./src/images/terser.png" alt="">
+			  </button>
+			  <button class="testimonialLinks" onclick="openCity(event, 'rome')">
+			  	<img src="./src/images/rome.png" alt="">
+			  </button>
+			  <button class="testimonialLinks" onclick="openCity(event, 'discord')">
+			  	<img src="./src/images/discord.png" alt="">
+			  </button>
+			  <button class="testimonialLinks" onclick="openCity(event, 'dynatrace')">
+
+			  	<img src="./src/images/dynatrace.png" alt="">
+			  </button>
+			  <button class="testimonialLinks" onclick="openCity(event, 'glitch')">
+			  	<img src="./src/images/glitch.png" alt="">
+
+			  </button>
+			  <button class="testimonialLinks" onclick="openCity(event, 'netflix')">
+			  	<img src="./src/images/netflix.png" alt="">
+
+			  </button>
+			</div>
+
+			<div id="terser" class="testimonial_content">
+			  <p class="testimonial">We used Shearman & Sterling to sell our company and the experience was excellent. They helped us get our listing together and made some tweaks to put it over the top. Once our listing was on the marketplace our calendar </p>
+			  <img class="testimonial-user-img" src="./src/images/testimonial_user_1.jpg" alt="testimonial user">
+			  <p class="testimonial-user-name">Patrick W. Smith</p>
+			  <p class="testimonial-user-designation">CEO, Terser</p>
+			</div>
+
+			<div id="rome" class="testimonial_content">
+			  <p class="testimonial">We used Shearman & Sterling to sell our company and the experience was excellent. They helped us get our listing together and made some tweaks to put it over the top. Once our listing was on the marketplace our calendar </p> 
+			  <img class="testimonial-user-img" src="./src/images/testimonial_user_2.jpg" alt="testimonial user">
+			  <p class="testimonial-user-name">Sebastian McKenzie</p>
+			  <p class="testimonial-user-designation">CEO, Rome</p>
+			</div>
+
+			<div id="discord" class="testimonial_content">
+			  <p class="testimonial">We used Shearman & Sterling to sell our company and the experience was excellent. They helped us get our listing together and made some tweaks to put it over the top. Once our listing was on the marketplace our calendar </p>
+			  <img class="testimonial-user-img" src="./src/images/testimonial_user_3.jpg" alt="testimonial user">
+			  <p class="testimonial-user-name">Jason Citron</p>
+			  <p class="testimonial-user-designation">CEO, Discord</p>
+			</div>
+			<div id="dynatrace" class="testimonial_content">
+			  <p class="testimonial">We used Shearman & Sterling to sell our company and the experience was excellent. They helped us get our listing together and made some tweaks to put it over the top. Once our listing was on the marketplace our calendar </p>
+			  <img class="testimonial-user-img" src="./src/images/testimonial_user_4.jpg" alt="testimonial user">
+			  <p class="testimonial-user-name">Rick M. McConnell</p>
+			  <p class="testimonial-user-designation">CEO, Dynatrace</p>
+			</div>
+
+			<div id="glitch" class="testimonial_content">
+			  <p class="testimonial">We used Shearman & Sterling to sell our company and the experience was excellent. They helped us get our listing together and made some tweaks to put it over the top. Once our listing was on the marketplace our calendar </p>
+			  <img class="testimonial-user-img" src="./src/images/testimonial_user_5.jpg" alt="testimonial user">
+			  <p class="testimonial-user-name">Anil Dash</p>
+			  <p class="testimonial-user-designation">CEO, Glitch</p>
+			</div>
+
+			<div id="netflix" class="testimonial_content">
+			  <p class="testimonial">We used Shearman & Sterling to sell our company and the experience was excellent. They helped us get our listing together and made some tweaks to put it over the top. Once our listing was on the marketplace our calendar </p>
+			  <img class="testimonial-user-img" src="./src/images/testimonial_user_6.jpg" alt="testimonial user">
+			  <p class="testimonial-user-name">Reed Hastings</p>
+			  <p class="testimonial-user-designation">CEO, Netflix</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="container subscription-container">
+		<div class="subscription reveal" id="subscription">
+			<p>Join over 100,000 Founders and Investors already doing business on Shearman & sterling</p>
+			<a class="header-btn join-now-btn">
+				<span>join now</span>
+				<i class="fas fa-arrow-right"></i>
+			</a>
+		</div>
+	</section>
+
+	<footer class="container footer-container">
+		<div class="footer" id="footer">
+			<div class="footer-logo-div" id="footer-logo-div">
+				<img src="./src/images/sNs_footer_logo.png" alt="Shearman & Sterling">
+				<p>
+					Shearman & Sterling has over 850 lawyers 
+					around the world speaking more than 
+					60 languages and practicing U.S., 
+					English, French, German, Italian, Hong Kong, ...
+				</p>
+				<p>
+					Copyright Shearman & Sterling: Global Law Firm
+				</p>
+			</div>
+			<div id="learn-more-div">
+				<ul class="footer-links-ul">
+					<li class="footer-link-item">
+						<h5 class="footer-links-heading">learn more</h5>
+					</li>
+					<li class="footer-link-item">
+						<a href="#opportunityOwner" class="footer-link">
+							For sellers
+						</a>
+					</li>
+					<li class="footer-link-item">
+						<a href="#investor" class="footer-link">
+							For buyers
+						</a>	
+					</li>
+					<li class="footer-link-item">
+						<a href="#testimonials" class="footer-link">
+							Testimonials
+						</a>	
+					</li>
+					<li class="footer-link-item">
+						<a href="javascript:void(0);" class="footer-link">
+							Premium
+						</a>	
+					</li>
+				</ul>
+			</div>
+			<div id="about-us-footer-div">
+				<ul class="footer-links-ul">
+					<li class="footer-link-item">
+						<h5 class="footer-links-heading">
+							About us
+						</h5>	
+					</li>
+					<li class="footer-link-item">
+						<a href="javascript:void(0);" class="footer-link">
+							About us
+						</a>	
+					</li>
+					<li class="footer-link-item">
+						<a href="javascript:void(0);" class="footer-link">
+							Privacy
+						</a>	
+					</li>
+					<li class="footer-link-item">
+						<a href="javascript:void(0);" class="footer-link">
+							Terms
+						</a>	
+					</li>
+				</ul>
+			</div>
+			<div id="address-footer-div">
+				<h5 class="footer-links-heading">
+					Address info
+				</h5>
+				<address>
+					<p>
+						9 Appold St, 
+					</p>
+					<p>
+						London EC2A 2AP, 
+					</p>
+					<p>
+						United Kingdom
+					</p>
+				</address>
+			</div>
+			<div class="footer-contact-info" id="footer-contact-div">
+				<h5 class="footer-links-heading">
+					Contact us
+				</h5>
+				<p>
+					1-800-111-5472
+				</p>
+				<p>
+					support@shearman.com
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- video lightbox -->
+	<div id = "lightbox">
+	  <i id = "close-btn" class="fa fa-times" onclick="closeLightBox()"></i>
+	  <div id = "video-wrapper">
+	    <video id = "video" width="960" height="540" src = "src/videos/samplevideo.mp4" autoplay></video>
+	  </div>
+	</div>
+<!-- video lightbox ends-->
+<!-- sidepanel script -->	
+	<script>
+		function openRightMenu() {
+		  document.getElementById("myRightSidePanel").style.width = "350px";
+		}
+		var myRightSidePanel = document.getElementById("myRightSidePanel");
+		window.onclick = function(event) {
+		  var myRightSidePanel = document.querySelector('#myRightSidePanel');
+		  var bounding = myRightSidePanel.getBoundingClientRect();
+		  if(bounding.width == 350){
+		  	console.log(bounding.width);
+		  	document.getElementById("myRightSidePanel").style.width = "0px";
+		  }
+		}
+
+
+		function closeLeftNav() {
+		  document.getElementById("myRightSidePanel").style.width = "0";
+		}
+
+		function openRightTabContent(evt, cityName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("rightPaneltabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("rightPaneltablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultRightSidepanelOpen").click();
+
+		var acc = document.getElementsByClassName("right-sidepanel-accordion");
+
+		    for (let i = 0; i < acc.length; i++) {
+		      acc[i].addEventListener("click", function() {
+		        this.classList.toggle("right-sidepanel-accordion-active");
+		        for (j = 0; j < acc.length; j++) {
+		          if (j !== i)
+		            acc[j].nextElementSibling.style.maxHeight = null;
+		        }
+		        var panel = this.nextElementSibling;
+		        if (panel.style.maxHeight) {
+		          panel.style.maxHeight = null;
+		        } else {
+		          panel.style.maxHeight = 160 + "px";
+		        }
+		      });
+		    } 
+
+		var rightPanelUserIcon = document.getElementsByClassName("right-panel-user-icon");
+		
+		for(userIcon = 0; userIcon < rightPanelUserIcon.length;userIcon++){
+			rightPanelUserIcon[userIcon].style.backgroundColor = "rgb("+Math.floor(Math.random()*150)+","+Math.floor(Math.random()*150)+","+Math.floor(Math.random()*150)+","+Math.floor(Math.random()*150)+")";
+		}   
+	</script>
+<!-- sidepanel script ends -->	
+
+	<script>
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if(window.screen.width > 920){
+
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				document.querySelector(".navbar-container").style.transition = "padding 0.2s, height 0.2s";
+				document.querySelector(".navbar-container").style.opacity = "0.9";
+				document.querySelector(".navbar-container").style.height = "6.1rem";
+				document.querySelector(".navbar-container").style.padding = "0rem 1rem";
+				document.querySelector(".responsive-navigation").style.top = "6.1rem";
+				document.querySelector(".top-menu-btn").style.top = "8.5%";
+				} else {
+				document.querySelector(".navbar-container").style.transition = "padding 0.2s, height 0.2s";
+				document.querySelector(".navbar-container").style.opacity = "0.9";
+				document.querySelector(".navbar-container").style.height = "8.8rem";
+				document.querySelector(".navbar-container").style.padding = "0rem 5.4rem";
+				document.querySelector(".responsive-navigation").style.top = "8.1rem";
+				document.querySelector(".top-menu-btn").style.top = "3.5%";
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		var header = document.getElementById("navgation-left-menu");
+		var btns = header.getElementsByClassName("nav-link");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		  var current = document.getElementsByClassName("nav-link-active");
+		  if (current.length > 0) { 
+		    current[0].className = current[0].className.replace(" nav-link-active", "");
+		  }
+		  this.className += " nav-link-active";
+		  });
+		}
+
+		function showResponsiveNav() {
+		  var x = document.getElementById("navbar-navigation");
+		  if (x.className === "navbar-navigation") {
+		    x.className += " responsive-navigation";
+		  } else {
+		    x.className = "navbar-navigation";
+		  }
+		} 
+
+		function viewLightBox(){
+			document.getElementById("lightbox").style.display = "block";
+			document.getElementById("lightbox").style.opacity = "1";
+			document.getElementById("video").play(); 
+		}
+
+		function closeLightBox() {
+			document.getElementById("lightbox").style.display = "none";
+			document.getElementById("lightbox").style.opacity = "0";
+			document.getElementById("video").pause();
+		}
+
+
+
+		function reveal() {
+		  var reveals = document.querySelectorAll(".reveal");
+
+		  for (var i = 0; i < reveals.length; i++) {
+		    var windowHeight = window.innerHeight;
+		    var elementTop = reveals[i].getBoundingClientRect().top;
+		    var elementVisible = 150;
+
+		    if (elementTop < windowHeight - elementVisible) {
+		      reveals[i].classList.add("active");
+		    } else {
+		      reveals[i].classList.remove("active");
+		    }
+		  }
+		}
+
+		window.addEventListener("scroll", reveal);
+	</script>
+	<!-- Charts -->
+	<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart(){
+		    var data = google.visualization.arrayToDataTable([
+		        ['Month','Profits'],
+		        ['Jan', Math.floor(Math.random()*5)],
+		        ['Feb', Math.floor(Math.random()*15)],
+		        ['Mar', Math.floor(Math.random()*10)]
+		    ]);
+
+		    var view = new google.visualization.DataView(data);
+		    view.setColumns([0, 1, {
+		        calc: function(dt, rowIndex) { return dt.getValue(rowIndex, 1).toString() + '%' } ,
+		        sourceColumn: 1,
+		        type: 'string',
+		        role: 'annotation',
+		        allValuesSuffix: '%'
+		    }]);
+
+
+		    var options = {
+		    	hAxis: {
+		    	  title: 'Month',
+		    	  gridlines: {
+		    	        color: 'transparent',
+		    	    },
+		    	    baselineColor: 'none'
+		    	},
+		    	vAxis: {
+		    	  title: 'Profits',
+		    	  gridlines: {
+		    	      color: 'transparent'
+		    	  },
+		    	  baselineColor: 'none'
+		    	},
+		    	legend: 'none',
+		    	backgroundColor: { fill:'transparent' },
+		    	colors: ['ghostwhite'],
+		    	pointSize: 5,
+		    	pointsVisible: true,
+		    	chartArea:{left:0,top:0,width:"100%",height:"100%"},
+		    	annotations: {
+		    	  textStyle: {
+		    	  // fontName: 'Times-Roman',
+		    	  fontSize: 15,
+		    	  // bold: false,
+		    	  // italic: true,
+		    	  color: 'ghostwhite',     
+		    	  // auraColor: '#22BAF6', 
+		    	  opacity: 0.9,
+		    	  allowHtml: true,
+		    	}
+		    	}
+		    };
+		    var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+		    chart.draw(view, options);  // <-- use data view
+		}
+	</script>
+
+	<script>
+		function openCity(evt, cityName) {
+		  var i, testimonial_content, testimonialLinks;
+		  testimonial_content = document.getElementsByClassName("testimonial_content");
+		  for (i = 0; i < testimonial_content.length; i++) {
+		    testimonial_content[i].style.display = "none";
+		  }
+
+		  testimonialLinks = document.getElementsByClassName("testimonialLinks");
+		  for (i = 0; i < testimonialLinks.length; i++) {
+		    testimonialLinks[i].className = testimonialLinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "flex";
+		  evt.currentTarget.className += " active";
+		} 
+		document.getElementById("defaultOpen").click();
+	</script>
+<!-- left sidepanel script -->
+	<script type="text/javascript">
+		function openLeftTabContent(event,contentTitle){
+			console.log("clicked on left content link");
+		}
+		var notificationmodal = document.getElementById("notificationModal");
+
+	</script>	
+<!-- left sidepanel script ends -->	
+</body>
+</html>

@@ -1,0 +1,683 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHEARMAN AND STERLING</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge">
+  <link rel="shortcut icon" href="./src/images/sNs_logo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./src/fonts/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="./src/fa/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/admin.css">
+</head>
+<body>
+  <header class="page-header">
+    <nav>
+      <a href="javascript:void(0);  " aria-label="forecastr logo" class="logo">
+        <img src="./src/images/sNs_footer_logo.png" alt="" id="admin-logo">
+      </a>
+      <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
+        <i class="fas fa-caret-square-down fa-2x"></i>
+      </button>
+      <ul class="admin-menu">
+      
+        <li>
+          <a href="javascript:void(0);" class="admin-menu-link">
+            <i class="fas fa-chart-pie"></i>
+            <span>overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="admin-menu-link">
+            <i class="fas fa-ticket-alt"></i>
+            <span>opportunity owner</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="admin-menu-link">
+            <i class="fas fa-lightbulb"></i>
+            <span>investor</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="admin-menu-link admin-link-active">
+            <i class="fas fa-users"></i>
+            <span>content addition</span>
+          </a>
+        </li>
+        <li class="settings-list-item">
+          <a href="javascript:void(0);" class="admin-menu-link">
+            <i class="fas fa-cog"></i>
+            <span>settings</span>
+          </a>
+        </li>
+        <li>
+          <button class="collapse-btn admin-menu-link" aria-expanded="true" aria-label="collapse menu">
+            <i class="fas fa-caret-square-left" id="collapse-btn-arrow"></i>
+            <span>Collapse</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="page-content">
+    <section class="search-and-user">
+      <h1 class="page-heading">content addition</h1>
+      <div class="form-profile-div">
+        <form class="admin-search-form">
+          <input type="search" placeholder="Search Pages...">
+          <button type="submit" aria-label="submit form">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="admin-profile">
+          <div class="notifications-div" id="notificationBtn">
+            <i class="fas fa-bell"></i>
+            <div class="notification-count">
+              <span>100</span>
+            </div> 
+          </div>
+          <div class="admin-greetings-div">
+            <span class="greeting">Hello admin</span>
+            <img src="./src/images/user_avatar.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="notificationModal" class="modal">
+      <div class="notification-modal-content">
+        <span class="notificationclose">&times;</span>
+        <div class="tab">
+          <button class="tablinks navigationTablinks" onclick="openNotification(event, 'opportunityOwner')" id="defaultNotificationOpen">opportunity owner</button>
+          <button class="tablinks navigationTablinks" onclick="openNotification(event, 'investor')">investor</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="opportunityOwner" class="tabcontent navigationTabContent">
+          <div class="notification-owner-container-div">
+            <div class="notification-owner-left-div">
+              <div class="notification-owner-info">
+                <img src="./src/images/avatar.png" alt="notification avatar">
+                <span>Opportunity owner</span>
+              </div>
+              <div class="notification-owner-description">
+                <span>An unique opportunity to purchase an established specialty school TK-6th grade, that serves a specific population of students with learning differences.</span>
+              </div>
+            </div>
+            <div class="notification-owner-right-div">
+              <img src="./src/images/notification_owner_cover_img.png" alt="owner cover image" class="notification-owner-cover-img">
+            </div>
+          </div>
+          <div class="notification-owner-container-div">
+            <div class="notification-owner-left-div">
+              <div class="notification-owner-info">
+                <img src="./src/images/avatar.png" alt="notification avatar">
+                <span>Opportunity owner</span>
+              </div>
+              <div class="notification-owner-description">
+                <span>An unique opportunity to purchase an established specialty school TK-6th grade, that serves a specific population of students with learning differences.</span>
+              </div>
+            </div>
+            <div class="notification-owner-right-div">
+              <img src="./src/images/notification_owner_cover_img.png" alt="owner cover image" class="notification-owner-cover-img">
+            </div>
+          </div>
+          <div class="notification-owner-container-div">
+            <div class="notification-owner-left-div">
+              <div class="notification-owner-info">
+                <img src="./src/images/avatar.png" alt="notification avatar">
+                <span>Opportunity owner</span>
+              </div>
+              <div class="notification-owner-description">
+                <span>An unique opportunity to purchase an established specialty school TK-6th grade, that serves a specific population of students with learning differences.</span>
+              </div>
+            </div>
+            <div class="notification-owner-right-div">
+              <img src="./src/images/notification_owner_cover_img.png" alt="owner cover image" class="notification-owner-cover-img">
+            </div>
+          </div>
+          <div class="notification-owner-container-div">
+            <div class="notification-owner-left-div">
+              <div class="notification-owner-info">
+                <img src="./src/images/avatar.png" alt="notification avatar">
+                <span>Opportunity owner</span>
+              </div>
+              <div class="notification-owner-description">
+                <span>An unique opportunity to purchase an established specialty school TK-6th grade, that serves a specific population of students with learning differences.</span>
+              </div>
+            </div>
+            <div class="notification-owner-right-div">
+              <img src="./src/images/notification_owner_cover_img.png" alt="owner cover image" class="notification-owner-cover-img">
+            </div>
+          </div>
+          <div class="notification-owner-container-div">
+            <div class="notification-owner-left-div">
+              <div class="notification-owner-info">
+                <img src="./src/images/avatar.png" alt="notification avatar">
+                <span>Opportunity owner</span>
+              </div>
+              <div class="notification-owner-description">
+                <span>An unique opportunity to purchase an established specialty school TK-6th grade, that serves a specific population of students with learning differences.</span>
+              </div>
+            </div>
+            <div class="notification-owner-right-div">
+              <img src="./src/images/notification_owner_cover_img.png" alt="owner cover image" class="notification-owner-cover-img">
+            </div>
+          </div>
+          <div class="notification-owner-container-div">
+            <div class="notification-owner-left-div">
+              <div class="notification-owner-info">
+                <img src="./src/images/avatar.png" alt="notification avatar">
+                <span>Opportunity owner</span>
+              </div>
+              <div class="notification-owner-description">
+                <span>An unique opportunity to purchase an established specialty school TK-6th grade, that serves a specific population of students with learning differences.</span>
+              </div>
+            </div>
+            <div class="notification-owner-right-div">
+              <img src="./src/images/notification_owner_cover_img.png" alt="owner cover image" class="notification-owner-cover-img">
+            </div>
+          </div>
+          <div class="notification-owner-container-div">
+            <div class="notification-owner-left-div">
+              <div class="notification-owner-info">
+                <img src="./src/images/avatar.png" alt="notification avatar">
+                <span>Opportunity owner</span>
+              </div>
+              <div class="notification-owner-description">
+                <span>An unique opportunity to purchase an established specialty school TK-6th grade, that serves a specific population of students with learning differences.</span>
+              </div>
+            </div>
+            <div class="notification-owner-right-div">
+              <img src="./src/images/notification_owner_cover_img.png" alt="owner cover image" class="notification-owner-cover-img">
+            </div>
+          </div>
+        </div>
+
+        <div id="investor" class="tabcontent navigationTabContent">
+          <div class="notification-investor-container-div">
+            <div class="notification-investor-left-div">
+              <img src="./src/images/avatar.png" alt="investor avatar">
+            </div>
+            <div class="notification-investor-right-div">
+              <span class="notification-investor-title">Investor Title</span>
+              <span class="notification-investor-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</span>
+            </div>
+
+          </div>
+          <div class="notification-investor-container-div">
+            <div class="notification-investor-left-div">
+              <img src="./src/images/avatar.png" alt="investor avatar">
+            </div>
+            <div class="notification-investor-right-div">
+              <span class="notification-investor-title">Investor Title</span>
+              <span class="notification-investor-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</span>
+            </div>
+
+          </div>
+          <div class="notification-investor-container-div">
+            <div class="notification-investor-left-div">
+              <img src="./src/images/avatar.png" alt="investor avatar">
+            </div>
+            <div class="notification-investor-right-div">
+              <span class="notification-investor-title">Investor Title</span>
+              <span class="notification-investor-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</span>
+            </div>
+
+          </div>
+          <div class="notification-investor-container-div">
+            <div class="notification-investor-left-div">
+              <img src="./src/images/avatar.png" alt="investor avatar">
+            </div>
+            <div class="notification-investor-right-div">
+              <span class="notification-investor-title">Investor Title</span>
+              <span class="notification-investor-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</span>
+            </div>
+
+          </div>
+          <div class="notification-investor-container-div">
+            <div class="notification-investor-left-div">
+              <img src="./src/images/avatar.png" alt="investor avatar">
+            </div>
+            <div class="notification-investor-right-div">
+              <span class="notification-investor-title">Investor Title</span>
+              <span class="notification-investor-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</span>
+            </div>
+
+          </div>
+          <div class="notification-investor-container-div">
+            <div class="notification-investor-left-div">
+              <img src="./src/images/avatar.png" alt="investor avatar">
+            </div>
+            <div class="notification-investor-right-div">
+              <span class="notification-investor-title">Investor Title</span>
+              <span class="notification-investor-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley .</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="notification-footer-div">
+          <button class="notification-view-all-btn">
+            view all
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <section class="grid">
+      
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'energy')" id="defaultOpen">energy</button>
+        <button class="tablinks" onclick="openCity(event, 'financial')">financial</button>
+        <button class="tablinks" onclick="openCity(event, 'impactESG')">impact/ESG</button>
+        <button class="tablinks" onclick="openCity(event, 'private_equity')">private equity</button>
+      </div>
+
+      <div id="energy" class="tabcontent">
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">1</span>
+          <span>webinar</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+          <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="energy_webinar_content_link" id="energy_webinar_content_link" class="content_link_input" placeholder="add link">
+                <input type="text" name="energy_webinar_content_link" id="energy_webinar_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">2</span>
+          <span>Whitepapers</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+          <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="energy_whitepapers_content_link" id="energy_whitepapers_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">3</span>
+          <span>Events</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+           <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="energy_events_content_link" id="energy_events_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">4</span>
+          <span>Content</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+           <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="energy_content_content_link" id="energy_content_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="financial" class="tabcontent">
+
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">1</span>
+          <span>webinar</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+          <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="financial_webinar_content_link" id="financial_webinar_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">2</span>
+          <span>Whitepapers</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+          <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="financial_whitepapers_content_link" id="financial_whitepapers_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">3</span>
+          <span>Events</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+           <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="financial_events_content_link" id="financial_events_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">4</span>
+          <span>Content</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+           <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="financial_content_content_link" id="financial_content_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="impactESG" class="tabcontent">
+         
+         <button class="right-sidepanel-accordion">
+           <span class="content-number">1</span>
+           <span>webinar</span>
+         </button>
+         <div class="right-sidepanel-accodion-panel">
+           <div class="accordion-content-add-form-div">
+             <h3 class="content-add-form-title">
+               <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+             </h3>
+             <form action="/action.php" class="content-add-link-form">
+                 <input type="text" name="impactESG_webinar_content_link" id="impactESG_webinar_content_link" class="content_link_input" placeholder="add link"> 
+                 <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+             </form>
+           </div>
+         </div>
+         <button class="right-sidepanel-accordion">
+           <span class="content-number">2</span>
+           <span>Whitepapers</span>
+         </button>
+         <div class="right-sidepanel-accodion-panel">
+           <div class="accordion-content-add-form-div">
+             <h3 class="content-add-form-title">
+               <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+             </h3>
+             <form action="/action.php" class="content-add-link-form">
+                 <input type="text" name="impactESG_whitepapers_content_link" id="impactESG_whitepapers_content_link" class="content_link_input" placeholder="add link"> 
+                 <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+             </form>
+           </div>
+         </div>
+         <button class="right-sidepanel-accordion">
+           <span class="content-number">3</span>
+           <span>Events</span>
+         </button>
+         <div class="right-sidepanel-accodion-panel">
+            <div class="accordion-content-add-form-div">
+             <h3 class="content-add-form-title">
+               <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+             </h3>
+             <form action="/action.php" class="content-add-link-form">
+                 <input type="text" name="impactESG_events_content_link" id="impactESG_events_content_link" class="content_link_input" placeholder="add link"> 
+                 <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+             </form>
+           </div>
+         </div>
+         <button class="right-sidepanel-accordion">
+           <span class="content-number">4</span>
+           <span>Content</span>
+         </button>
+         <div class="right-sidepanel-accodion-panel">
+            <div class="accordion-content-add-form-div">
+             <h3 class="content-add-form-title">
+               <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+             </h3>
+             <form action="/action.php" class="content-add-link-form">
+                 <input type="text" name="impactESG_content_content_link" id="impactESG_content_content_link" class="content_link_input" placeholder="add link"> 
+                 <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+             </form>
+           </div>
+         </div>
+          
+
+      </div>
+      <div id="private_equity" class="tabcontent">
+        
+
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">1</span>
+          <span>webinar</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+          <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="private_equity_webinar_content_link" id="private_equity_webinar_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">2</span>
+          <span>Whitepapers</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+          <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="private_equity_whitepapers_content_link" id="private_equity_whitepapers_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">3</span>
+          <span>Events</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+           <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="private_equity_events_content_link" id="private_equity_events_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        <button class="right-sidepanel-accordion">
+          <span class="content-number">4</span>
+          <span>Content</span>
+        </button>
+        <div class="right-sidepanel-accodion-panel">
+           <div class="accordion-content-add-form-div">
+            <h3 class="content-add-form-title">
+              <span class="add-link-side-num">1</span><span class="add-link-title">Add link</span>
+            </h3>
+            <form action="/action.php" class="content-add-link-form">
+                <input type="text" name="private_equity_content_content_link" id="private_equity_content_content_link" class="content_link_input" placeholder="add link"> 
+                <input type="submit" value="submit" class="submit-btn content-add-submit-btn">   
+            </form>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+  </section>
+
+  <script type="text/javascript">
+
+    var btns = document.getElementsByClassName("admin-menu-link");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("admin-link-active");
+      if (current.length > 0) { 
+        current[0].className = current[0].className.replace(" admin-link-active", "");
+      }
+      this.className += " admin-link-active";
+      });
+    }
+
+    const html = document.documentElement;
+    const body = document.body;
+    const menuLinks = document.querySelectorAll(".admin-menu a");
+    const collapseBtn = document.querySelector(".admin-menu .collapse-btn");
+    const toggleMobileMenu = document.querySelector(".toggle-mob-menu");
+    const switchInput = document.querySelector(".switch input");
+    const switchLabel = document.querySelector(".switch label");
+    const collapsedClass = "collapsed";
+
+    /*TOGGLE HEADER STATE*/
+    collapseBtn.addEventListener("click", function () {
+      body.classList.toggle(collapsedClass);
+      this.getAttribute("aria-expanded") == "true"
+        ? this.setAttribute("aria-expanded", "false")
+        : this.setAttribute("aria-expanded", "true");
+      this.getAttribute("aria-label") == "collapse menu"
+        ? this.setAttribute("aria-label", "expand menu")
+        : this.setAttribute("aria-label", "collapse menu");
+        document.getElementById("collapse-btn-arrow").classList.toggle('fa-caret-square-left');
+
+        document.getElementById("collapse-btn-arrow").classList.toggle('fa-caret-square-right');
+
+    });
+
+    /*TOGGLE MOBILE MENU*/
+    toggleMobileMenu.addEventListener("click", function () {
+      body.classList.toggle("mob-menu-opened");
+      this.getAttribute("aria-expanded") == "true"
+        ? this.setAttribute("aria-expanded", "false")
+        : this.setAttribute("aria-expanded", "true");
+      this.getAttribute("aria-label") == "open menu"
+        ? this.setAttribute("aria-label", "close menu")
+        : this.setAttribute("aria-label", "open menu");
+    });
+
+    /*SHOW TOOLTIP ON MENU LINK HOVER*/
+    for (const link of menuLinks) {
+      link.addEventListener("mouseenter", function () {
+        if (
+          body.classList.contains(collapsedClass) &&
+          window.matchMedia("(min-width: 768px)").matches
+        ) {
+          const tooltip = this.querySelector("span").textContent;
+          this.setAttribute("title", tooltip);
+        } else {
+          this.removeAttribute("title");
+        }
+      });
+    }
+
+  </script>
+
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
+  function openNotification(evt, notificationName) {
+    var i, navigationTabContent, navigationTablinks;
+    navigationTabContent = document.getElementsByClassName("navigationTabContent");
+    for (i = 0; i < navigationTabContent.length; i++) {
+      navigationTabContent[i].style.display = "none";
+    }
+     navigationTablinks = document.getElementsByClassName(" navigationTablinks");
+    for (i = 0; i <  navigationTablinks.length; i++) {
+       navigationTablinks[i].className =  navigationTablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(notificationName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultNotificationOpen").click();
+
+  var acc = document.getElementsByClassName("right-sidepanel-accordion");
+
+      for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("right-sidepanel-accordion-active");
+          for (j = 0; j < acc.length; j++) {
+            if (j !== i)
+              acc[j].nextElementSibling.style.display = "none";
+          }
+          var panel = this.nextElementSibling;
+          if (panel.style.minHeight) {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      } 
+
+  </script>
+
+
+<!-- Notifications panel scripts -->
+  <script>
+  var notificationmodal = document.getElementById("notificationModal");
+  var notificationbtn = document.getElementById("notificationBtn");
+  var notificationclose = document.getElementsByClassName("notificationclose")[0];
+  notificationbtn.onclick = function() {
+    notificationmodal.style.display = "flex";
+  }
+  notificationclose.onclick = function() {
+    notificationmodal.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == notificationmodal) {
+      notificationmodal.style.display = "none";
+    }
+  }
+  </script>
+</body>

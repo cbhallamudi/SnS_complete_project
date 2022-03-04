@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.right-side-panel-tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display:flex;
+  justify-content:space-evenly;
+}
+
+/* Style the buttons inside the tab */
+.right-side-panel-tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  display:flex;
+  flex-direction:column;
+}
+
+/* Change background color of buttons on hover */
+.right-side-panel-tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.right-side-panel-tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.rightPaneltabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.right-sidepanel-accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .right-sidepanel-accordion-active,
+    .right-sidepanel-accordion:hover {
+      background-color: #ccc;
+    }
+    
+    .right-sidepanel-accodion-panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+</style>
+</head>
+<body>
+
+<h2>Tabs</h2>
+<p>Click on the x button in the top right corner to close the current tab:</p>
+
+<div class="right-side-panel-tab">
+  <button class="rightPaneltablinks" onclick="openRightTabContent(event, 'energy')" id="defaultOpen"><i class="fas fa-cloud"></i>London</button>
+  <button class="rightPaneltablinks" onclick="openRightTabContent(event, 'financial')"><i class="fas fa-bus"></i>Paris</button>
+  <button class="rightPaneltablinks" onclick="openRightTabContent(event, 'import')"><i class="fas fa-heart"></i>Tokyo</button>
+  <button class="rightPaneltablinks" onclick="openRightTabContent(event, 'equity')"><i class="fas fa-bars"></i>Tokyo</button>
+</div>
+
+<div id="energy" class="rightPaneltabcontent">
+  <button class="right-sidepanel-accordion">Section 1</button>
+  <div class="right-sidepanel-accodion-panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <button class="right-sidepanel-accordion">Section 2</button>
+  <div class="right-sidepanel-accodion-panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <button class="right-sidepanel-accordion">Section 3</button>
+  <div class="right-sidepanel-accodion-panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div> 
+  
+    <button class="right-sidepanel-accordion">Section 4</button>
+  <div class="right-sidepanel-accodion-panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div> 
+</div>
+
+<div id="financial" class="rightPaneltabcontent">
+  
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="import" class="rightPaneltabcontent">
+  
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="equity" class="rightPaneltabcontent">
+  
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openRightTabContent(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("rightPaneltabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("rightPaneltablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+var acc = document.getElementsByClassName("right-sidepanel-accordion");
+
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("right-sidepanel-accordion-active");
+        for (j = 0; j < acc.length; j++) {
+          if (j !== i)
+            acc[j].nextElementSibling.style.maxHeight = null;
+        }
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+</script>
+   
+</body>
+</html> 
